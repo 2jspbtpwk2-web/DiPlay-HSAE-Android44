@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="local.airuize.diplaylegacy.uismoke"
+    android:versionCode="1" android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="18" />
+    <application android:label="DiPlay UI stability smoke" android:debuggable="true" />
+    <instrumentation android:name=".UiSmokeInstrumentation"
+        android:targetPackage="local.airuize.diplaylegacy"
+        android:label="DiPlay actual activity stability regression" />
+</manifest>

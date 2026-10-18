@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="local.airuize.diplaylegacy.learningsmoke"
+    android:versionCode="1" android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="18" />
+    <application android:label="DiPlay learning UI smoke" android:debuggable="true" />
+    <instrumentation android:name=".LearningSmokeInstrumentation"
+        android:targetPackage="local.airuize.diplaylegacy"
+        android:label="DiPlay installed learning UI regression" />
+</manifest>

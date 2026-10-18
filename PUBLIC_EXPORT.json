@@ -1,0 +1,14 @@
+{
+  "sourceVersion": "0.60-tucsonl / 21040",
+  "publicVariant": "sanitized-source-only",
+  "targetVehicle": "2023 Hyundai Tucson L",
+  "targetHeadUnit": "HSAE nx4c_avnt_imx6q / Android 4.4.3 API19 / i.MX6 / portrait 960x1280",
+  "runtimeIdentityIncluded": false,
+  "originalSigningKeyIncluded": false,
+  "vehicleReportsIncluded": false,
+  "apkIncluded": false,
+  "tunHelperIncluded": false,
+  "publicVariantFullApkTested": false,
+  "publicVariantVehicleTested": false,
+  "history": "new source export; upstream authors and license notices retained"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="local.airuize.diplaylegacy.mediasmoke"
+    android:versionCode="1" android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="18" />
+    <application android:label="DiPlay synthetic media smoke" android:debuggable="true"
+        android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <activity android:name=".MediaSmokeActivity" android:screenOrientation="portrait"
+            android:exported="true" />
+    </application>
+    <instrumentation android:name=".MediaSmokeInstrumentation"
+        android:targetPackage="local.airuize.diplaylegacy.mediasmoke"
+        android:label="DiPlay final APK synthetic media regression" />
+</manifest>

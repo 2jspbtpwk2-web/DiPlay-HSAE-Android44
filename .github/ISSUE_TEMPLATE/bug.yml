@@ -1,0 +1,32 @@
+name: HSAE问题反馈
+description: 反馈脱敏后的连接、画面、声音和功能问题
+body:
+  - type: markdown
+    attributes:
+      value: 请先删除个人标识、精确位置、配对资料、证书/私钥和Token，不要上传完整未脱敏诊断。公开源码默认缺身份/TUN helper，不能直接当完整可连接APK。
+  - type: input
+    id: car
+    attributes:
+      label: 车型、年款及配置
+      placeholder: 例如现代2023款途胜L（请补具体配置）
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 车机与软件版本
+      description: 车机型号、CPU、Android/API、屏幕、构建来源、App版本、iPhone型号及iOS；不要填序列号、UDID或精确地址。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤、预期与实际结果
+      description: 标明连接阶段、冷连/重连、出声位置、按键反应和问题相对时间。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 最小脱敏证据
+      description: 仅必要计数/状态码/短日志，先人工检查；不要贴原始密钥、配对数据或整份私人报告。

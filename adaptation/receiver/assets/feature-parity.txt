@@ -1,0 +1,22 @@
+DiPlay Android 4.3 receiver — v0.21 experimental
+Baseline: upstream DiPlay 0.2.8 / f2d06951. Implementation and hardware acceptance are separate.
+
+Reported on one Android4.3/i.MX6 firmware: wireless picture, H.264 full-screen video, touch, music, navigation synchronization/announcements, Siri invocation, steering-button delivery and independently readable vehicle GPS. Version0.21 display recovery was reported working. Other firmware is not guaranteed.
+
+Settings: upstream-style native groups, manual wireless/USB selection, optional automatic connection, display scale/frame rate/physical size/safe area/full-screen, audio focus, buffer/volume and independent media/navigation streams0–20 with previews. Existing diagnostic tools remain available.
+
+Projection recovery: show the target before waiting for a first frame; force Surface attachment on projection return and changed Surface dimensions. A released output buffer does not prove visible panel output.
+
+Voice button: recognized MCU click opens DiPlay when disconnected and invokes upstream Siri when connected. Separate physical long-press behavior is not implemented.
+
+GPS/CAN: valid Android GPS through upstream GGA/RMC. Read-only OEM ABS/CAN getters; independent PASCD requires verified gear mapping and phone subscription. iPhone adoption is unverified; wheel-pulse conversion is not implemented.
+
+Implemented but hardware-dependent: USBMUX/Lockdown/carkit/iAP2, NCM/IPv6/VPN; managed hotspot, Wi-Fi Direct and shared-router modes; HEVC/Opus only with installed codecs. Controls do not prove device support.
+
+Still requiring evidence: full Wi-Fi iAP2 handoff, sustained microphone recognition, telephone duplex audio, every OEM audio stream, long-session/reboot recovery and iPhone Live Activities.
+
+Not provided: BYD HUD/cluster, Android11 embedded maps, upstream Home sample, battery data and completed platform/core/vehicle-layer refactor.
+
+Reverse Assist and PlatformService: current process-error snapshots may supply an exception stack. Missing records are inconclusive. The OEM service crash cause remains unresolved; this app does not modify the reverse-camera service.
+
+Reports remain local until deliberately shared. Source excludes identities and signing keys; the release APK includes upstream's experimental runtime identity, which is extractable. This is not an Apple-certified product.

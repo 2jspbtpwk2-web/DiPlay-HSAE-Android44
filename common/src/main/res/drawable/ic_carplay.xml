@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-only
+     Original geometric display placeholder for the public source copy. No brand artwork. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp" android:height="64dp"
+    android:viewportWidth="64" android:viewportHeight="64">
+    <path android:fillColor="#142234"
+        android:pathData="M12,0H52Q64,0 64,12V52Q64,64 52,64H12Q0,64 0,52V12Q0,0 12,0Z"/>
+    <path android:fillColor="#F4F7FB"
+        android:pathData="M15,14H49Q52,14 52,17V39Q52,42 49,42H15Q12,42 12,39V17Q12,14 15,14Z"/>
+    <path android:fillColor="#142234" android:pathData="M17,19H47V37H17Z"/>
+    <path android:fillColor="#F4F7FB" android:pathData="M29,42H35V49H41V53H23V49H29Z"/>
+    <path android:fillColor="#F5AE48" android:pathData="M50,48A3,3 0,1 1,44,48A3,3 0,1 1,50,48Z"/>
+</vector>
